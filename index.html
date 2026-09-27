@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>8 Months of Us ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #0b0710;
+    color: white;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(255,92,145,.18), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(161,104,255,.16), transparent 32%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= OPENING ================= */
+
+.hero {
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 999px;
+    background: rgba(255,255,255,.06);
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(52px, 14vw, 120px);
+    line-height: .92;
+
+    background: linear-gradient(
+        135deg,
+        #fff,
+        #ffb7d0,
+        #d7b8ff
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    margin: 24px auto 30px;
+    max-width: 600px;
+    color: #d9d0db;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: white;
+    color: #160d18;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 35px rgba(255,255,255,.15);
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.scroll {
+    margin-top: 60px;
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/* ================= HEADINGS ================= */
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(34px, 8vw, 65px);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.lead {
+    color: #bdb2c0;
+    text-align: center;
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* ================= PHOTO GALLERY ================= */
+
+.gallery {
+    width: min(1050px, 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 20px;
+    background: #17111a;
+
+    aspect-ratio: 4/5;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.28);
+}
+
+.card:nth-child(2),
+.card:nth-child(5),
+.card:nth-child(8) {
+    aspect-ratio: 1/1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .6s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* ================= VIDEOS ================= */
+
+.videos {
+    width: min(950px,100%);
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 18px;
+}
+
+.video-card {
+    background: rgba(255,255,255,.06);
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid rgba(255,255,255,.1);
+}
+
+video {
+    width: 100%;
+
+    border-radius: 14px;
+
+    display: block;
+
+    max-height: 560px;
+
+    object-fit: cover;
+
+    background: #000;
+}
+
+.video-label {
+    padding: 12px 4px 4px;
+
+    color: #ddd;
+
+    font-weight: 600;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.letter {
+    width: min(760px,100%);
+
+    background: rgba(255,255,255,.07);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius: 28px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.letter p {
+    white-space: pre-line;
+
+    color: #eee;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+
+/* ================= SECRET SURPRISE ================= */
+
+.secret-section {
+    min-height: 65vh;
+
+    text-align: center;
+}
+
+.secret-box {
+    width: min(700px,100%);
+
+    padding: 38px 25px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.secret-lock {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.secret-hint {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    margin-bottom: 22px;
+}
+
+.secret-btn {
+    border: 0;
+
+    padding: 14px 23px;
+
+    border-radius: 999px;
+
+    background: white;
+
+    color: #160d18;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.secret-btn:hover {
+    transform: scale(1.04);
+}
+
+.secret-message {
+    display: none;
+
+    margin-top: 28px;
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    animation: secretIn 1s ease;
+}
+
+.secret-message.show {
+    display: block;
+}
+
+@keyframes secretIn {
+
+    from {
+        opacity: 0;
+        transform: scale(.94) translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+
+/* ================= FINAL ================= */
+
+.final {
+    text-align: center;
+}
+
+.final h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size:
+        clamp(42px,10vw,85px);
+
+    margin-bottom: 15px;
+}
+
+.final p {
+    color: #c8bdc8;
+
+    font-size: 17px;
+}
+
+
+/* ================= ANIMATIONS ================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        1s;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform:
+        none;
+}
+
+.heart {
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 18px;
+
+    opacity: .7;
+
+    animation:
+        float 6s linear forwards;
+
+    pointer-events: none;
+}
+
+@keyframes float {
+
+    to {
+        transform:
+            translateY(-110vh)
+            rotate(25deg);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:760px) {
+
+    .gallery {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .videos {
+        grid-template-columns:
+            1fr;
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(5),
+    .card:nth-child(8) {
+        aspect-ratio: 4/5;
+    }
+
+    section {
+        padding:
+            55px 15px;
+    }
+
+    .letter {
+        padding:
+            22px;
+    }
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     FIRST PAGE
+===================================================== -->
+
+<section class="hero">
+
+    <div class="badge">
+        A little surprise made just for us ❤️
+    </div>
+
+
+    <h1>
+        8 Months
+        <br>
+        of Us
+    </h1>
+
+
+    <p class="subtitle">
+
+        Since 2082/10/11 ❤️
+
+        <br><br>
+
+        Eight months of memories,
+        random moments, laughs,
+        little fights, and a whole lot
+        of "us". 🥹❤️
+
+    </p>
+
+
+    <!-- AUTOMATIC SMOOTH SCROLL BUTTON -->
+
+    <button
+        class="btn"
+        onclick="openMemories()">
+
+        Open our memories ✨
+
+    </button>
+
+
+    <div class="scroll">
+
+        SCROLL DOWN ↓
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section id="memories">
+
+    <h2 class="title reveal">
+
+        Our little memories 📸
+
+    </h2>
+
+
+    <p class="lead reveal">
+
+        Some moments don't need
+        a long explanation.
+
+        <br>
+
+        They just need to be remembered. ❤️
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <div class="card reveal">
+            <img src="media/photo1.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo2.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo3.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo4.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo5.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo6.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo7.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo8.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo9.jpg">
+        </div>
+
+
+        <div class="card reveal">
+            <img src="media/photo10.jpg">
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VIDEOS
+===================================================== -->
+
+<section>
+
+    <h2 class="title reveal">
+
+        A few moments of you 🎥
+
+    </h2>
+
+
+    <p class="lead reveal">
+
+        Because pictures freeze a moment,
+        but videos somehow bring it back. ❤️
+
+    </p>
+
+
+    <div class="videos">
+
+
+        <div class="video-card reveal">
+
+            <video
+                controls
+                playsinline
+                preload="metadata">
+
+                <source
+                    src="media/video1.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <div class="video-label">
+                Memory 1 ❤️
+            </div>
+
+        </div>
+
+
+
+        <div class="video-card reveal">
+
+            <video
+                controls
+                playsinline
+                preload="metadata">
+
+                <source
+                    src="media/video2.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <div class="video-label">
+                Memory 2 ❤️
+            </div>
+
+        </div>
+
+
+
+        <div class="video-card reveal">
+
+            <video
+                controls
+                playsinline
+                preload="metadata">
+
+                <source
+                    src="media/video3.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <div class="video-label">
+                Memory 3 ❤️
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     8 MONTH MESSAGE
+===================================================== -->
+
+<section>
+
+    <h2 class="title reveal">
+
+        For my sanuuu 💌
+
+    </h2>
+
+
+    <p class="lead reveal">
+
+        I wanted to put this message
+        somewhere you could keep
+        coming back to.
+
+    </p>
+
+
+    <div class="letter reveal">
+
+<p>
+Sanuuuu 😭❤️
+
+8 MONTHSSSSS alreadyyyy!!!
+Likeee how did we even reach here so fastttt 😭🫶
+
+It honestly feels like just yesterday when everything started,
+and now look at us — 8 months of so many memories,
+laughs, little fights, random talks, stupid moments
+and sooooo many beautiful memories together. 🥹❤️
+
+Sanu, life ma katiii kura haru aauxa janchaaa,
+sometimes everything is perfect and sometimes things
+get a little difficult, but through all of it I'm just
+really happy that I got to have YOU beside me. 🫂❤️
+
+Thank you for all the little things you do,
+for understanding me, for listening to my nonsense,
+for making me smile when I don't even feel like smiling,
+and simply for being my favourite person to share
+all these moments with. 🥺💗
+
+Hamro relationship perfect nai hunuparcha bhanne chaina.
+We can have misunderstandings, arguments, bad days
+and all that, but I just want us to keep understanding
+each other, talking things out and choosing our bond
+again and again. 🫶
+
+Mero bacchaaaa, thank you for becoming such a special
+part of my life. ❤️
+
+You are genuinely one of the most beautiful chapters
+of my life, and I hope we keep making manyyy more
+memories together.
+
+8 months downnn...
+and so many more memories to make. ♾️❤️
+
+Happy 8 months to usssss mero mutuuuu,
+mero bacchaaaa, mero aalu, mero sanuuuuu 😭❤️🫶
+
+I loveeee all the memories we've made,
+and I'm really excited for all the ones still waiting for us. 🥹♾️
+
+— Your budaa ❤️
+</p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HIDDEN SURPRISE
+===================================================== -->
+
+<section class="secret-section">
+
+    <div class="secret-box">
+
+
+        <div class="secret-lock">
+
+            🔒
+
+        </div>
+
+
+        <div class="secret-hint">
+
+            One last little surprise...
+
+        </div>
+
+
+        <button
+            class="secret-btn"
+            onclick="revealSecret()">
+
+            Tap to open ❤️
+
+        </button>
+
+
+        <div
+            id="secretMessage"
+            class="secret-message">
+
+            Ma timlai sadhai Maya garxuu
+            ani hamroo xitaii bihe hunxaa
+            sanuuuu 🥺💋
+
+            <br><br>
+
+            aja 8 months bhayo yesarii gari
+            kei barsaa ani hami sadhai bhari
+            ko Lai sangai hunxam umahh
+            🥺💋😭
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section class="final">
+
+
+    <div class="badge reveal">
+
+        And this is only one chapter...
+
+    </div>
+
+
+    <h2 class="reveal">
+
+        Happy 8 Months
+        <br>
+        to Us ❤️♾️
+
+    </h2>
+
+
+    <p class="reveal">
+
+        Since 2082/10/11
+
+        <br>
+
+        More memories.
+        More laughs.
+        More little moments. 🫶
+
+    </p>
+
+
+    <br>
+
+
+    <a
+        class="btn reveal"
+        href="#"
+        onclick="
+            window.scrollTo({
+                top:0,
+                behavior:'smooth'
+            });
+            return false;
+        ">
+
+        Replay the surprise ↻
+
+    </a>
+
+
+</section>
+
+
+
+<script>
+
+
+/* =====================================================
+   OPEN MEMORIES
+   AUTOMATIC SMOOTH SCROLL
+===================================================== */
+
+function openMemories() {
+
+    const memories =
+        document.getElementById("memories");
+
+    memories.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "start"
+
+    });
+
+}
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const items =
+    document.querySelectorAll(".reveal");
+
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target
+                        .classList
+                        .add("show");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+
+items.forEach(item =>
+    observer.observe(item)
+);
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+function heart() {
+
+    const h =
+        document.createElement("div");
+
+    h.className = "heart";
+
+
+    h.textContent =
+        ["❤️","💗","💕","🫶","✨"]
+        [
+            Math.floor(
+                Math.random() * 5
+            )
+        ];
+
+
+    h.style.left =
+        Math.random() * 100 + "vw";
+
+
+    h.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+
+    h.style.fontSize =
+        (14 + Math.random() * 18) + "px";
+
+
+    document.body.appendChild(h);
+
+
+    setTimeout(
+        () => h.remove(),
+        8000
+    );
+
+}
+
+
+setInterval(
+    heart,
+    700
+);
+
+
+/* =====================================================
+   HIDDEN SURPRISE
+===================================================== */
+
+function revealSecret() {
+
+    const message =
+        document.getElementById(
+            "secretMessage"
+        );
+
+
+    const button =
+        document.querySelector(
+            ".secret-btn"
+        );
+
+
+    message.classList.add("show");
+
+
+    button.textContent =
+        "Opened with love ❤️";
+
+
+    button.disabled = true;
+
+
+    for (
+        let i = 0;
+        i < 18;
+        i++
+    ) {
+
+        setTimeout(
+            heart,
+            i * 80
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
